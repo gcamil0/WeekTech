@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tech Week</string>
+    <string name="nav_inicio">Início</string>
+    <string name="nav_cadastro">Inscrever</string>
+    <string name="nav_projetos">Projetos</string>
+    <string name="nav_faq">FAQ</string>
+    <string name="nav_mapa">Mapa</string>
+</resources>

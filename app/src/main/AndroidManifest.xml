@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TechWeek">
+
+        <!-- Tela inicial -->
+        <activity
+            android:name=".ui.evento.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Cadastro de participante -->
+        <activity android:name=".ui.cadastro.CadastroActivity" />
+
+        <!-- Cadastro de projeto -->
+        <activity android:name=".ui.projetos.CadastroProjetoActivity" />
+
+        <!-- FAQ -->
+        <activity android:name=".ui.faq.FaqActivity" />
+
+        <!-- Login Admin -->
+        <activity android:name=".ui.admin.LoginAdminActivity" />
+
+        <!-- Painel Admin -->
+        <activity android:name=".ui.admin.PainelAdminActivity" />
+
+        <!-- Confirmação de presença -->
+        <activity android:name=".ui.evento.ConfirmarPresencaActivity" />
+
+    </application>
+
+</manifest>
