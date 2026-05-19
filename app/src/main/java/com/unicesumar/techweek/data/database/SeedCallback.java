@@ -32,47 +32,61 @@ public class SeedCallback extends RoomDatabase.Callback {
 
         // Palestras do evento (dados fixos do evento)
         Palestra[] palestras = {
-            new Palestra(
-                "Introdução ao Desenvolvimento Mobile",
-                "Prof. Carlos Mendes",
-                "Especialista em Android com 10 anos de experiência no mercado.",
-                "09:00 - 10:00",
-                "Auditório Principal",
-                "TW2024-01"
-            ),
-            new Palestra(
-                "Clean Architecture na Prática",
-                "Ana Paula Souza",
-                "Engenheira de software sênior, referência em arquitetura Android.",
-                "10:30 - 11:30",
-                "Auditório Principal",
-                "TW2024-02"
-            ),
-            new Palestra(
-                "Room Database e Persistência Local",
-                "Prof. Ricardo Alves",
-                "Doutor em Ciência da Computação, pesquisador de banco de dados móveis.",
-                "14:00 - 15:00",
-                "Sala 101",
-                "TW2024-03"
-            ),
-            new Palestra(
-                "UX/UI para Apps Mobile",
-                "Fernanda Lima",
-                "Designer de produto com foco em experiência do usuário mobile.",
-                "15:30 - 16:30",
-                "Auditório Principal",
-                "TW2024-04"
-            ),
-            new Palestra(
-                "DevOps e Deploy de Apps Android",
-                "Marcos Oliveira",
-                "Especialista em CI/CD e automação de build para Android.",
-                "17:00 - 18:00",
-                "Sala 101",
-                "TW2024-05"
-            )
+                // 01/06 - Segunda
+                new Palestra(
+                        "Pense com IA: A Revolucao da Inteligencia Ampliada",
+                        "Gustavo Melles",
+                        "Fundador do BuscaIA.com e OiRobo.com. Professor no MBA em Inovacao e IA da PUCPR. Colunista na Radio CBN Londrina.",
+                        "01/06 - 19:15",
+                        "Auditorio Principal",
+                        "TW2026-01"
+                ),
+                new Palestra(
+                        "Os Data Taggers e o Trabalho Invisivel por Tras da IA",
+                        "Jessy Borges Ferracioli",
+                        "Advogada e pesquisadora de direito e inteligencia artificial na Lawgorithm, do nucleo IA e Raca.",
+                        "01/06 - 20:30",
+                        "Auditorio Principal",
+                        "TW2026-02"
+                ),
+
+                // 02/06 - Terça
+                new Palestra(
+                        "Construcao e Orquestracao de Agentes de IA",
+                        "Luciano Soler",
+                        "Engenheiro da Computacao, Mestre em Ciencias da Computacao. Atua com desenvolvimento de Software e IA no IAPAR.",
+                        "02/06 - 19:15",
+                        "Auditorio Principal",
+                        "TW2026-03"
+                ),
+                new Palestra(
+                        "O Programador Morreu. Vida Longa ao Programador",
+                        "Michel Banagouro",
+                        "Arquiteto de Software e CTO na Leanwork Group. 20 anos de experiencia em e-commerces como Centauro, Ultrafarma e Riachuelo.",
+                        "02/06 - 20:30",
+                        "Auditorio Principal",
+                        "TW2026-04"
+                ),
+
+                // 03/06 - Quarta
+                new Palestra(
+                        "IA e Protecao de Dados: Desafios, Etica e Seguranca",
+                        "Luiz Fernando Pereira Nunes",
+                        "Profissional com +15 anos em TI. Mestre em Ciencia da Computacao e em Direito e Tecnologia. Lider na Hanke Digital Solutions.",
+                        "03/06 - 19:15",
+                        "Auditorio Principal",
+                        "TW2026-05"
+                ),
+                new Palestra(
+                        "Mostra de Trabalhos - II Tech Week",
+                        "Alunos UniCesumar",
+                        "Apresentacao dos projetos desenvolvidos pelos alunos dos cursos de tecnologia da UniCesumar Londrina.",
+                        "03/06 - 20:30",
+                        "Auditorio Principal",
+                        "TW2026-06"
+                )
         };
+
 
         for (Palestra p : palestras) {
             database.palestraDao().inserir(p);
